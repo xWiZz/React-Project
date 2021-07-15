@@ -1,10 +1,10 @@
 import './App.css';
-
 import {BrowserRouter, Route, NavLink} from 'react-router-dom';
 
 import Accueil from './views/Accueil';
 import Recherche from './views/Recherche';
 import Favoris from './views/Favoris';
+import Evenement from './views/Evenement';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         <Route path="/" component={Accueil} exact />
         <Route path="/recherche" component={Recherche} />
         <Route path="/favoris" component={Favoris} />
+        <Route path="/evenement/:id" component={Evenement} />
 
       </div>
     </BrowserRouter>

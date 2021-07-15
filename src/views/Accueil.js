@@ -40,6 +40,7 @@ class App extends Component {
                     <ul>
                         {items.map((item, index) => (
                             <Card 
+                                id={item.id}
                                 title={item.fields.title}
                                 img={item.fields.cover.url}
                                 alt={item.fields.cover_alt}
