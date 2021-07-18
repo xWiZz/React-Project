@@ -36,7 +36,7 @@ class App extends Component {
         else {
 
             return (
-                <div className="App">
+                <div className="HomeCustom">
                     <ul>
                         {items.map((item, index) => (
                             <Card 

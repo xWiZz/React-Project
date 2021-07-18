@@ -1,6 +1,8 @@
+import '../App.css';
 import React from 'react';
 import { useRef, useState } from 'react';
 import Card from '../components/Card';
+import Loupe from '../assets/loupe.png';
 
 function Recherche() {
 
@@ -21,17 +23,18 @@ function Recherche() {
 
 
     return (
-        <div>
-            <h1>Page de recherche</h1>
+        <div className="searchCustom">
+            <h1>Recherchez un évènement</h1>
 
             <form onSubmit={onValidateForm}>
-                <input type="text" ref={inputRef} />
-                <button type="submit">Rechercher</button>
+                <input type="text" placeholder="Que cherchez-vous ?" ref={inputRef} />
+                <button type="submit"><img src={Loupe} alt="Loupe"/></button>
             </form>
 
             {records && <>
-            {records.map(itemData => (
+            {records.map((itemData, index) => (
                             <Card 
+                                key={index}
                                 id={itemData.record.id}
                                 title={itemData.record.fields.title}
                                 img={itemData.record.fields.cover.url}
@@ -43,7 +46,7 @@ function Recherche() {
             </>}
 
             {records.length === 0 && (
-                    <p>error404</p>
+                    <p>Aucun résultat</p>
                 )}
         </div>
     );

@@ -36,3 +36,321 @@
     transform: rotate(360deg);
   }
 }
+
+.App{
+  
+}
+
+.App header{
+  width: 100%;
+  height: 80px;
+  background-color: #fcde67;
+  margin-bottom: 50px;
+}
+.App header ul{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  max-width: 310px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.App header ul li{
+list-style: none;
+}
+.App header ul li a{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 200ms ease-in-out;
+}
+.App header ul li a:hover{
+  color: rgb(255, 255, 255); 
+}
+
+
+.HomeCustom{
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.searchCustom{
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.searchCustom form{
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.searchCustom form input{
+  width: 100%;
+  height: 50px;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  padding: 0px 20px;
+}
+
+.searchCustom form button{
+  position: absolute;
+  right: 5px;
+  border: none;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #5bccf6;
+  transition: background-color 200ms ease-in-out;
+}
+
+.searchCustom form button:hover{
+  background-color: #47a5c7;
+}
+
+.searchCustom form button img{
+  width: 20px;
+  height: auto;
+}
+
+.checkedCustom{
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.HomeCustom ul{
+  padding: 0;
+  margin: 0;
+}
+
+.HomeCustom ul a{
+  text-decoration: none;
+}
+
+.searchCustom a{
+  text-decoration: none;
+}
+
+.searchCustom a{
+  text-decoration: none;
+}
+
+.checkedCustom a{
+  text-decoration: none;
+}
+
+.CardCustom{
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  height: 350px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.CardCustom::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  background-color: #EBEBEB;
+}
+
+.CardCustom .leftSideCard{
+  width: 40%;
+}
+
+.CardCustom .rightSideCard{
+  width: 55%;
+  text-align: left;
+  text-decoration: none;
+  color: rgb(133, 113, 113);
+}
+
+.CardCustom .rightSideCard h2{
+  color: rgb(73, 73, 73);
+  margin-top: 5px;
+}
+
+.CardCustom .rightSideCard h2::after{
+  content: '';
+  display: block;
+  width: 10%;
+  height: 2px;
+  position: relative;
+  background-color: #EBEBEB;
+  margin-top: 15px;
+}
+
+.CardCustom .rightSideCard button{
+  position: absolute;
+  top: 50px;
+  right: 25px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  border: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 9;
+}
+
+.CardCustom .rightSideCard button:hover{
+  background-color: #F3F3F3;
+}
+
+.CardCustom .rightSideCard button img{
+  width: 100%;
+  height: auto;
+}
+
+
+.CardCustom img{
+  width: auto;
+  height: 100%;
+  max-height: 300px;
+  border-radius: 15px;
+}
+
+.eventCustom{
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.eventCustom .contentEvent{
+
+}
+
+.eventCustom .contentEvent .topEvent{
+  position: relative ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: unset;
+}
+.eventCustom .contentEvent .topEvent button{
+  border-radius: 50px;
+  width: 150px;
+  height: 40px;
+  border: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+.eventCustom .contentEvent .topEvent button:hover{
+  background-color: #F3F3F3;
+}
+.eventCustom .contentEvent .topEvent button img{
+  width: auto;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.eventCustom .contentEvent .bottomEvent{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eventCustom .contentEvent .bottomEvent h2{
+  margin-bottom: 0;
+}
+
+.eventCustom .contentEvent .bottomEvent p{
+  margin-top: 10px;
+}
+
+.footer{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  margin-top: 50px;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  background-color: #5bccf6;
+  z-index: 99;
+}
+
+@media screen and (max-width: 1280px){
+  .CardCustom{
+    width: 100%;
+    max-width: 310px;
+    margin: auto;
+    height: auto;
+    background-color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .CardCustom .rightSideCard button{
+    top: 10px;
+    right: 10px;
+    border: transparent;
+    background-color: #fff;
+  }
+
+  .CardCustom img{
+    width: 100%;
+    height: auto;
+    max-height: unset;
+
+  } 
+
+  .CardCustom .leftSideCard, .CardCustom .rightSideCard{
+    width: 100%;
+  }
+
+  .eventCustom{
+    width: 90%;
+  }
+  
+  .eventCustom .contentEvent .topEvent{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .eventCustom .contentEvent .topEvent button{
+    justify-content: left;
+    background-color: transparent;
+    padding: 0;
+  }
+}
